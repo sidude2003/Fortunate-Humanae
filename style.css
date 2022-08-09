@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Titan+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#heading {
+  text-align: center;
+}
+
+h1 {
+  position: relative;
+}
+
+#generate {
+  align-items: center;
+  position: absolute;
+  left: 670px;
+  top: 70px;
+}
+
+#game-table {
+  position: absolute;
+  top: 150px;
+  height: 500px;
+  width: 700px;
+  margin-left: 400px;
+}
+
+td {
+  border: 1px solid blue;
+  width: 500px;
+  height: 96px;
+}
+
+#generate {
+  display: inline-block;
+  border-radius: 2rem;
+  padding: 0.6rem 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  /* to smoothen the hover effect on clicking */
+  transition: all 300ms ease;
+  font-size: 0.9rem;
+}
+
+#generate:active {
+  opacity: 0.8rem;
+  background: white;
+}
+
+.figure-part-1-1 {
+  display: none;
+  fill: transparent;
+  stroke: blue;
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+.figure-part-1-2 {
+  display: none;
+  fill: transparent;
+  stroke: blue;
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+.figure-part-1-3 {
+  display: none;
+  fill: transparent;
+  stroke: blue;
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+.figure-part-1-4 {
+  display: none;
+  fill: transparent;
+  stroke: blue;
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+.figure-part-1-5 {
+  display: none;
+  fill: transparent;
+  stroke: blue;
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+.figure-part-2-1 {
+  display: none;
+  fill: transparent;
+  stroke: blue;
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+.figure-part-2-2 {
+  display: none;
+  fill: transparent;
+  stroke: blue;
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+.figure-part-2-3 {
+  display: none;
+  fill: transparent;
+  stroke: blue;
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+.figure-part-2-4 {
+  display: none;
+  fill: transparent;
+  stroke: blue;
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+.figure-part-2-5 {
+  display: none;
+  fill: transparent;
+  stroke: blue;
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+
+/* .figure-part-1-1 {
+  display: block;
+} */
