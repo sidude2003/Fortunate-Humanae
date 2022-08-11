@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const figurepart24 = document.querySelectorAll(".figure-part-2-4");
   const figurepart25 = document.querySelectorAll(".figure-part-2-5");
   var randArray = [];
+  var randArrayOdd = [];
+  var randArrayEven = [];
 
   function randomNum() {
     let rand = Math.random() * 5;
@@ -32,10 +34,34 @@ document.addEventListener("DOMContentLoaded", function () {
     // randomNum();
     let num = randomNum();
     randArray.push(num);
-    console.log(randArray);
+    if (randArray.length % 2 != 0) {
+      randArrayOdd.push(randArray[randArray.length - 1]);
+      console.log(randArrayOdd);
+    } else {
+      randArrayEven.push(randArray[randArray.length - 1]);
+      console.log(randArrayEven);
+    }
+
+    // console.log(randArray);
+    document.getElementById("number-gen").innerHTML = num;
 
     figurepart11.forEach((part, index) => {
-      if (num == 1 && index == repeatFind(randArray, 1) - 1) {
+      if (num == 1 && index == repeatFind(randArrayOdd, 1) - 1) {
+        part.style.display = "block";
+      }
+    });
+    figurepart21.forEach((part, index) => {
+      if (num == 1 && index == repeatFind(randArrayEven, 1) - 1) {
+        part.style.display = "block";
+      }
+    });
+    figurepart12.forEach((part, index) => {
+      if (num == 2 && index == repeatFind(randArrayOdd, 2) - 1) {
+        part.style.display = "block";
+      }
+    });
+    figurepart22.forEach((part, index) => {
+      if (num == 2 && index == repeatFind(randArrayEven, 2) - 1) {
         part.style.display = "block";
       }
     });

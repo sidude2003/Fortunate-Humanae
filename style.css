@@ -125,6 +125,11 @@ td {
   stroke-linecap: round;
 }
 
+.number-display {
+  position: absolute;
+  left: 100px;
+}
+
 /* .figure-part-1-1 {
   display: block;
 } */
