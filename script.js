@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         obj[number] += 1;
       }
     });
-    return obj[1];
+    return obj[n];
   }
 
   document.getElementById("generate").onclick = function () {
@@ -36,10 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
     randArray.push(num);
     if (randArray.length % 2 != 0) {
       randArrayOdd.push(randArray[randArray.length - 1]);
-      console.log(randArrayOdd);
     } else {
       randArrayEven.push(randArray[randArray.length - 1]);
-      console.log(randArrayEven);
     }
 
     // console.log(randArray);
@@ -62,6 +60,36 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     figurepart22.forEach((part, index) => {
       if (num == 2 && index == repeatFind(randArrayEven, 2) - 1) {
+        part.style.display = "block";
+      }
+    });
+    figurepart13.forEach((part, index) => {
+      if (num == 3 && index == repeatFind(randArrayEven, 3) - 1) {
+        part.style.display = "block";
+      }
+    });
+    figurepart23.forEach((part, index) => {
+      if (num == 3 && index == repeatFind(randArrayEven, 3) - 1) {
+        part.style.display = "block";
+      }
+    });
+    figurepart14.forEach((part, index) => {
+      if (num == 4 && index == repeatFind(randArrayEven, 4) - 1) {
+        part.style.display = "block";
+      }
+    });
+    figurepart24.forEach((part, index) => {
+      if (num == 4 && index == repeatFind(randArrayEven, 4) - 1) {
+        part.style.display = "block";
+      }
+    });
+    figurepart15.forEach((part, index) => {
+      if (num == 5 && index == repeatFind(randArrayEven, 5) - 1) {
+        part.style.display = "block";
+      }
+    });
+    figurepart25.forEach((part, index) => {
+      if (num == 5 && index == repeatFind(randArrayEven, 5) - 1) {
         part.style.display = "block";
       }
     });
